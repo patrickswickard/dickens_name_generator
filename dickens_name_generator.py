@@ -41,4 +41,8 @@ for entry1 in first_syllable_array:
 random.shuffle(valid_name_array)
 
 #print(len(valid_name_array))
-print(valid_name_array)
+#print(valid_name_array)
+count = 0
+for name in valid_name_array:
+  count += 1
+  print(str(count) + ". " + name)
