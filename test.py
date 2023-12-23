@@ -1,25 +1,26 @@
+"""Dickens test"""
 import csv
 import random
 
 first_syllable_array = []
 second_syllable_array = []
 
-with open("name1.csv",'r') as name_file_1:
+with open("name1.csv",'r',encoding='utf-8') as name_file_1:
   reader1 = csv.reader(name_file_1)
   for row1 in reader1:
-     entry = {}      
-     entry['syllable'] = row1[0]
-     entry['fit'] = row1[1]
-     entry['funnydirty'] = row1[2]
-     first_syllable_array.append(entry)
-with open("name2.csv",'r') as name_file_2:
+    entry = {}
+    entry['syllable'] = row1[0]
+    entry['fit'] = row1[1]
+    entry['funnydirty'] = row1[2]
+    first_syllable_array.append(entry)
+with open("name2.csv",'r',encoding='utf-8') as name_file_2:
   reader2 = csv.reader(name_file_2)
   for row2 in reader2:
-     entry = {}      
-     entry['syllable'] = row2[0]
-     entry['fit'] = row2[1]
-     entry['funnydirty'] = row2[2]
-     second_syllable_array.append(entry)
+    entry = {}
+    entry['syllable'] = row2[0]
+    entry['fit'] = row2[1]
+    entry['funnydirty'] = row2[2]
+    second_syllable_array.append(entry)
 name_file_1.close()
 name_file_2.close()
 
